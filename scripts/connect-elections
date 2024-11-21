@@ -1,0 +1,4 @@
+#!/bin/zsh
+export AWS_PROFILE=elections
+aws sso login
+kubectl config use-context elections

@@ -1,0 +1,4 @@
+#!/bin/zsh
+export AWS_PROFILE=demo
+aws sso login
+kubectl config use-context demo

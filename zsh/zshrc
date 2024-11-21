@@ -47,6 +47,9 @@ export PATH=/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/loca
 export PATH=/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:$PATH
 export PATH=/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:$PATH
 export PATH=/Users/prabhathkotha/go/bin/bin:$PATH
+export PATH=/Users/prabhathkotha/.config/scripts:$PATH
+
+eval "$(starship init zsh)"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"

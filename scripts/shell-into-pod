@@ -1,0 +1,11 @@
+#!/bin/zsh
+
+if [ -z "$1" ]; then
+  echo "Usage: ./kubectl_exec.sh <pod-name>"
+  exit 1
+fi
+
+POD_NAME=$1
+
+# Execute a shell into the specified pod
+kubectl exec -it "$POD_NAME" -- /bin/sh || kubectl exec -it "$POD_NAME" -- /bin/bash
