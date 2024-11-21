@@ -1,0 +1,59 @@
+export PATH=$PATH:/Users/prabhathkotha/go/bin
+
+export PATH=~/Kalshi/Frontend/flutter/bin:$PATH
+
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+
+date() {
+  if [ "$1" = "-I" ]; then
+    command date "+%Y-%m-%dT%H%M%S%z"
+  else
+  command date "$@"
+  fi
+}
+
+export GOPATH=~/go
+export PATH=${PATH}:~/go/bin
+
+export kcmd=$GOPATH/bin/kcmd
+
+alias kalshi-snap='git switch dev && git pull && git tag release/`date -I` && git switch lx && git reset --hard dev && git push -f && git switch staging && git reset --hard dev && git push -f --no-verify && git switch demo && git reset --hard dev && git push -f --no-verify && git push --tags  --no-verify'
+
+export PATH=/opt/homebrew/bin:$PATH
+export PATH=/Users/prabhathkotha/Kalshi/Frontend/flutter/bin:$PATH
+export PATH=/usr/local/bin:$PATH
+export PATH=/System/Cryptexes/App/usr/bin:$PATH
+export PATH=/usr/bin:$PATH
+export PATH=/bin:$PATH
+export PATH=/usr/sbin:$PATH
+export PATH=/sbin:$PATH
+export PATH=/usr/local/go/bin:$PATH
+export PATH=/usr/local/munki:$PATH
+export PATH=/Library/Apple/usr/bin:$PATH
+export PATH=/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:$PATH
+export PATH=/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:$PATH
+export PATH=/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:$PATH
+export PATH=/Users/prabhathkotha/Kalshi/Frontend/flutter/bin:$PATH
+export PATH=/usr/local/bin:$PATH
+export PATH=/System/Cryptexes/App/usr/bin:$PATH
+export PATH=/usr/bin:$PATH
+export PATH=/bin:$PATH
+export PATH=/usr/sbin:$PATH
+export PATH=/sbin:$PATH
+export PATH=/usr/local/go/bin:$PATH
+export PATH=/usr/local/munki:$PATH
+export PATH=/Library/Apple/usr/bin:$PATH
+export PATH=/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:$PATH
+export PATH=/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:$PATH
+export PATH=/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:$PATH
+export PATH=/Users/prabhathkotha/go/bin/bin:$PATH
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+export PATH="/usr/local/bin:$PATH"
+
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
